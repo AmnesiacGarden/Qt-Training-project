@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>bg.jpg</file>
+        <file>icon.png</file>
+        <file>Avatar.jpg</file>
+        <file>er.jpg</file>
+        <file>icon1.jpg</file>
+        <file>mm.jpg</file>
+        <file>zh.jpg</file>
+        <file>erweima.jpg</file>
+        <file>bg1.jpg</file>
+        <file>chat.jpg</file>
+        <file>linkman.jpg</file>
+        <file>set.jpg</file>
+        <file>Avatar1.jpg</file>
+    </qresource>
+</RCC>
