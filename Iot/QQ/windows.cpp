@@ -17,7 +17,7 @@ windows::windows(QWidget *parent) :
 
     //背景
     QPalette pal;
-    pal.setBrush(QPalette::Background,QBrush(QPixmap(QString(":/new/prefix2/bg1.jpg"))));
+    pal.setBrush(QPalette::Background,QBrush(QPixmap(QString(":/new/prefix2/bg.jpg"))));
     this->setPalette(pal);
 
     //上
@@ -46,30 +46,35 @@ windows::windows(QWidget *parent) :
     //中
     clzk =  new QPushButton();
     clzk->setStyleSheet("border:none");
+    clzk->setFlat("ture");
     clzk->setMaximumSize(180,68);
     clzk->setMinimumSize(180,68);
     clzk->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/chuanglianzuokai.png);}");
 
     clzg =  new QPushButton();
     clzg->setStyleSheet("border:none");
+    clzg->setFlat("ture");
     clzg->setMaximumSize(180,68);
     clzg->setMinimumSize(180,68);
     clzg->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/chuanglianzuoguan.png);}");
 
     clyk =  new QPushButton();
     clyk->setStyleSheet("border:none");
+    clyk->setFlat("ture");
     clyk->setMaximumSize(180,68);
     clyk->setMinimumSize(180,68);
     clyk->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/chuanglianyoukai.png);}");
 
     clyg =  new QPushButton();
     clyg->setStyleSheet("border:none");
+    clyg->setFlat("ture");
     clyg->setMaximumSize(180,68);
     clyg->setMinimumSize(180,68);
     clyg->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/chuanglianyouguan.png);}");
 
     bjqk =  new QPushButton();
     bjqk->setStyleSheet("border:none");
+    bjqk->setFlat("ture");
     bjqk->setMaximumSize(180,68);
     bjqk->setMinimumSize(180,68);
     bjqk->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/dakaibaojingqi.png);}");
@@ -79,33 +84,37 @@ windows::windows(QWidget *parent) :
     tuxiang->setPixmap(pix);
     tuxiang->resize(1024,683);
 
-
     deng1 =  new QPushButton();
     deng1->setStyleSheet("border:none");
+    deng1->setFlat("ture");
     deng1->setMaximumSize(180,68);
     deng1->setMinimumSize(180,68);
     deng1->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/灯一.png);}");
 
     deng2 =  new QPushButton();
     deng2->setStyleSheet("border:none");
+    deng2->setFlat("ture");
     deng2->setMaximumSize(180,68);
     deng2->setMinimumSize(180,68);
     deng2->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/灯二.png);}");
 
     deng3 =  new QPushButton();
     deng3->setStyleSheet("border:none");
+    deng3->setFlat("ture");
     deng3->setMaximumSize(180,68);
     deng3->setMinimumSize(180,68);
     deng3->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/灯三.png);}");
 
     deng4 =  new QPushButton();
     deng4->setStyleSheet("border:none");
+    deng4->setFlat("ture");
     deng4->setMaximumSize(180,68);
     deng4->setMinimumSize(180,68);
     deng4->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/灯四.png);}");
 
     bjqg =  new QPushButton();
     bjqg->setStyleSheet("border:none");
+    bjqg->setFlat("ture");
     bjqg->setMaximumSize(180,68);
     bjqg->setMinimumSize(180,68);
     bjqg->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/关闭报警器.png);}");
@@ -137,53 +146,72 @@ windows::windows(QWidget *parent) :
 
     kt1jian =  new QPushButton();
     kt1jian->setStyleSheet("border:none");
+    kt1jian->setFlat("ture");
     kt1jian->setMaximumSize(23,24);
     kt1jian->setMinimumSize(23,24);
     kt1jian->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/jiangwen.png);}");
 
     kt1kg =  new QPushButton();
     kt1kg->setStyleSheet("border:none");
+    kt1kg->setFlat("ture");
     kt1kg->setMaximumSize(33,29);
     kt1kg->setMinimumSize(33,29);
     kt1kg->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/off.png);}");
 
     kt1jia =  new QPushButton();
     kt1jia->setStyleSheet("border:none");
+    kt1jia->setFlat("ture");
     kt1jia->setMaximumSize(23,24);
     kt1jia->setMinimumSize(23,24);
     kt1jia->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/shengwen.png);}");
 
+    kt1t =  new QLabel();
+    QPixmap pix2 = QPixmap(":/new/prefix2/kongtiaoyi.png");
+    kt1t->setPixmap(pix2);
+    kt1t->resize(363,114);
+
     kt1Lay = new QGridLayout();
-    kt1Lay->addWidget(kt1,0,0,1,3);
-    kt1Lay->addWidget(kt1jian,2,0);
-    kt1Lay->addWidget(kt1kg,2,1);
-    kt1Lay->addWidget(kt1jia,2,2);
+    kt1Lay->addWidget(kt1t,0,0,2,13);
+    kt1Lay->addWidget(kt1,0,7,1,6);
+    kt1Lay->addWidget(kt1jian,1,7,1,1);
+    kt1Lay->addWidget(kt1kg,1,10,1,1);
+    kt1Lay->addWidget(kt1jia,1,12,1,1);
 
     sxts =  new QPushButton();
     sxts->setStyleSheet("border:none");
+    sxts->setFlat("ture");
     sxts->setMaximumSize(16,22);
     sxts->setMinimumSize(16,22);
     sxts->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/up.png);}");
 
     sxtz =  new QPushButton();
     sxtz->setStyleSheet("border:none");
+    sxtz->setFlat("ture");
     sxtz->setMaximumSize(22,16);
     sxtz->setMinimumSize(22,16);
     sxtz->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/left.png);}");
 
     sxtx =  new QPushButton();
     sxtx->setStyleSheet("border:none");
-    sxtx->setMaximumSize(16,22);
-    sxtx->setMinimumSize(16,22);
+    sxtx->setFlat("ture");
+    sxtx->setMaximumSize(17,23);
+    sxtx->setMinimumSize(17,23);
     sxtx->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/down.png);}");
 
     sxty =  new QPushButton();
     sxty->setStyleSheet("border:none");
+    sxty->setFlat("ture");
     sxty->setMaximumSize(22,16);
     sxty->setMinimumSize(22,16);
     sxty->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/right.png);}");
 
+    yuan =  new QLabel();
+    QPixmap pix1 = QPixmap(":/new/prefix2/jiankonganniubeijing.png");
+    yuan->setPixmap(pix1);
+//    yuan->resize(1024,683);
+
     sxtLay = new QGridLayout();
+    sxtLay->addWidget(yuan,0,0,3,3);
     sxtLay->addWidget(sxts,0,1,1,1);
     sxtLay->addWidget(sxtz,1,0,1,1);
     sxtLay->addWidget(sxtx,2,1,1,1);
@@ -194,42 +222,52 @@ windows::windows(QWidget *parent) :
 
     kt2jian =  new QPushButton();
     kt2jian->setStyleSheet("border:none");
+    kt2jian->setFlat("ture");
     kt2jian->setMaximumSize(23,24);
     kt2jian->setMinimumSize(23,24);
     kt2jian->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/jiangwen.png);}");
 
     kt2kg =  new QPushButton();
     kt2kg->setStyleSheet("border:none");
+    kt2kg->setFlat("ture");
     kt2kg->setMaximumSize(33,29);
     kt2kg->setMinimumSize(33,29);
     kt2kg->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/off.png);}");
 
     kt2jia =  new QPushButton();
     kt2jia->setStyleSheet("border:none");
+    kt2jia->setFlat("ture");
     kt2jia->setMaximumSize(23,24);
     kt2jia->setMinimumSize(23,24);
     kt2jia->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/shengwen.png);}");
 
+    kt2t =  new QLabel();
+    QPixmap pix3 = QPixmap(":/new/prefix2/kongtiaoer.png");
+    kt2t->setPixmap(pix3);
+    kt2t->resize(363,114);
+
     kt2Lay = new QGridLayout();
-    kt2Lay->addWidget(kt2,0,0,1,3);
-    kt2Lay->addWidget(kt2jian,2,0);
-    kt2Lay->addWidget(kt2kg,2,1);
-    kt2Lay->addWidget(kt2jia,2,2);
+    kt2Lay->addWidget(kt2t,0,0,2,13);
+    kt2Lay->addWidget(kt2,0,0,1,6);
+    kt2Lay->addWidget(kt2jian,1,0,1,1);
+    kt2Lay->addWidget(kt2kg,1,2,1,1);
+    kt2Lay->addWidget(kt2jia,1,5,1,1);
 
-//    xiaLay = new QHBoxLayout();
-//    xiaLay->addStretch();
-//    xiaLay->addLayout(kt1Lay);
-//    xiaLay->addLayout(sxtLay);
-//    xiaLay->addLayout(kt2Lay);
-//    xiaLay->addStretch();
+    xiaLay = new QHBoxLayout();
+    xiaLay->addStretch();
+    xiaLay->addLayout(kt1Lay);
+    xiaLay->addLayout(sxtLay);
+    xiaLay->addLayout(kt2Lay);
+    xiaLay->addStretch();
 
-    xiaLay = new QGridLayout();
-    xiaLay->addLayout(kt1Lay,0,0);
-    xiaLay->addLayout(sxtLay,0,1);
-    xiaLay->addLayout(kt2Lay,0,2);
+//    xiaLay = new QGridLayout();
+//    xiaLay->addLayout(kt1Lay,0,0);
+//    xiaLay->addLayout(sxtLay,0,1);
+//    xiaLay->addLayout(kt2Lay,0,2);
 
     //注销
     logout =  new QPushButton("注销");
+    logout->setFlat("ture");
     logout->setStyleSheet("background-color:deepskyblue");
 
     logoutLay = new QHBoxLayout;

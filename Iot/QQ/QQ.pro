@@ -6,6 +6,7 @@
 
 QT       += core gui
 #QT += core
+RC_ICONS = bitbug_favicon.ico
 QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets

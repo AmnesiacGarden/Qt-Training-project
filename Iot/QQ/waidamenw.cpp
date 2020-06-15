@@ -54,12 +54,14 @@ waidamenw::waidamenw(QWidget *parent) :
 
     deng1 =  new QPushButton();
     deng1->setStyleSheet("border:none");
+    deng1->setFlat("ture");
     deng1->setMaximumSize(180,68);
     deng1->setMinimumSize(180,68);
     deng1->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/灯一.png);}");
 
     deng2 =  new QPushButton();
     deng2->setStyleSheet("border:none");
+    deng2->setFlat("ture");
     deng2->setMaximumSize(180,68);
     deng2->setMinimumSize(180,68);
     deng2->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/灯二.png);}");
@@ -72,12 +74,14 @@ waidamenw::waidamenw(QWidget *parent) :
 
     kai =  new QPushButton();
     kai->setStyleSheet("border:none");
+    kai->setFlat("ture");
     kai->setMaximumSize(180,68);
     kai->setMinimumSize(180,68);
     kai->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/开门.png);}");
 
     guan =  new QPushButton();
     guan->setStyleSheet("border:none");
+    guan->setFlat("ture");
     guan->setMaximumSize(180,68);
     guan->setMinimumSize(180,68);
     guan->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/关门.png);}");
@@ -90,24 +94,28 @@ waidamenw::waidamenw(QWidget *parent) :
 
     sxts =  new QPushButton();
     sxts->setStyleSheet("border:none");
+    sxts->setFlat("ture");
     sxts->setMaximumSize(16,22);
     sxts->setMinimumSize(16,22);
     sxts->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/up.png);}");
 
     sxtz =  new QPushButton();
     sxtz->setStyleSheet("border:none");
+    sxtz->setFlat("ture");
     sxtz->setMaximumSize(22,16);
     sxtz->setMinimumSize(22,16);
     sxtz->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/left.png);}");
 
     sxtx =  new QPushButton();
     sxtx->setStyleSheet("border:none");
+    sxtx->setFlat("ture");
     sxtx->setMaximumSize(16,22);
     sxtx->setMinimumSize(16,22);
     sxtx->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/down.png);}");
 
     sxty =  new QPushButton();
     sxty->setStyleSheet("border:none");
+    sxty->setFlat("ture");
     sxty->setMaximumSize(22,16);
     sxty->setMinimumSize(22,16);
     sxty->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/right.png);}");

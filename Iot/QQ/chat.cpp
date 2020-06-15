@@ -29,54 +29,63 @@ Chat::Chat(QWidget *parent) :
     //中
     keting =  new QPushButton();
     keting->setStyleSheet("border:none");
+    keting->setFlat("ture");
     keting->setMaximumSize(497,266);
     keting->setMinimumSize(497,266);
     keting->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/keting.png);}");
 
     dixiashi =  new QPushButton();
     dixiashi->setStyleSheet("border:none");
+    dixiashi->setFlat("ture");
     dixiashi->setMaximumSize(497,266);
     dixiashi->setMinimumSize(497,266);
     dixiashi->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/dixiashi.png);}");
 
     waijing =  new QPushButton();
     waijing->setStyleSheet("border:none");
+    waijing->setFlat("ture");
     waijing->setMaximumSize(497,266);
     waijing->setMinimumSize(497,266);
     waijing->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/waijing.png);}");
 
     woshi1 =  new QPushButton();
     woshi1->setStyleSheet("border:none");
+    woshi1->setFlat("ture");
     woshi1->setMaximumSize(497,266);
     woshi1->setMinimumSize(497,266);
     woshi1->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/woshiyi.png);}");
 
     woshi2 =  new QPushButton();
     woshi2->setStyleSheet("border:none");
+    woshi2->setFlat("ture");
     woshi2->setMaximumSize(497,266);
     woshi2->setMinimumSize(497,266);
     woshi2->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/woshier.png);}");
 
     woshi3 =  new QPushButton();
     woshi3->setStyleSheet("border:none");
+    woshi3->setFlat("ture");
     woshi3->setMaximumSize(497,266);
     woshi3->setMinimumSize(497,266);
     woshi3->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/woshisan.png);}");
 
     cheku =  new QPushButton();
     cheku->setStyleSheet("border:none");
+    cheku->setFlat("ture");
     cheku->setMaximumSize(497,266);
     cheku->setMinimumSize(497,266);
     cheku->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/cheku.png);}");
 
     chufang =  new QPushButton();
     chufang->setStyleSheet("border:none");
+    chufang->setFlat("ture");
     chufang->setMaximumSize(497,266);
     chufang->setMinimumSize(497,266);
     chufang->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/chufang.png);}");
 
     waidamen =  new QPushButton();
     waidamen->setStyleSheet("border:none");
+    waidamen->setFlat("ture");
     waidamen->setMaximumSize(497,266);
     waidamen->setMinimumSize(497,266);
     waidamen->setStyleSheet("QPushButton{background-image: url(:/new/prefix2/waidamen.png);}");
@@ -96,6 +105,7 @@ Chat::Chat(QWidget *parent) :
     //下
     logout =  new QPushButton("注销");
     logout->setStyleSheet("background-color:deepskyblue");
+    logout->setFlat("ture");
 
     logoutLay = new QHBoxLayout;
     logoutLay ->addWidget(logout);
